@@ -66,6 +66,12 @@
         font-size: 1.5em;
         color: #89CDA5;
       }
+      .role-description2 {
+        margin-right: 10%;
+        position: relative;
+        font-size: 1.5em;
+        color: #89CDA5;
+      }
 
     nav {
         text-align: right;
@@ -185,11 +191,35 @@ h2 {
     color: white;
     font-size:0.8em;
 }
+      .working-on{
+          position: absolute;
+          top: 6em; right: -1em;
+          height: 250px; width: 200px;
+          background-color: black;
+          padding: 0px; padding-left: 25px;
+          border-radius: 20px; box-shadow: 0 10px 20px #2C2C2C;
+      }
       @media only screen and (max-width: 700px) {
     .pcimg {
         display: none;
     }
+          .video1{
+              display: none;
+          }
+          .working-on{
+          position: absolute;
+          top: 6em; right: -1em;
+          height: 90px; width: 140px;
+          padding: 0px; padding-left: 10px;
+          border-radius: 20px; box-shadow: 0 10px 20px #2C2C2C;
+      }
+          
     .role-description{
+        margin-right: 20%;
+        font-size: 1.1em;
+        line-height: 1.2;
+    }
+          .role-description2{
         margin-right: 20%;
         font-size: 1.1em;
         line-height: 1.2;
@@ -211,21 +241,21 @@ h2 {
 <body>
     <div id="menu-bar">
         <div id="logo"><a href="index.html"><button id="raisaBtn"> ☘︎ raisa </button></a></div><nav>
-        <a href="https://drive.google.com/file/d/1g_DaIo8EqPatz-ypgG-1hFVe_vP9B3qB/view?usp=sharing" target="_blank"><button id="homeBtn">resume</button></a>
+        <a href="https://drive.google.com/file/d/1EjpT0I-0XHZwq6IwfLPGp4ARo4FhL1Yq/view?usp=sharing" target="_blank"><button id="homeBtn">resume</button></a>
       <a href="mailto:mtraisa2.0@gmail.com"><button id="graphicDesignBtn">contact</button> </a> 
     </nav></div>
   <header style="margin-left: 17%;">
-    <div class="working-on" style="position: fixed; top: 1em; right: 1em; background-color: black; border: 1px solid #ccc; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
-  <p class="role-description">
-    <b>
-      <span style="color: #B9FFD5;font-size: 1.8em;line-height: 1em;max-width: 100%;">Working on:</span><br><br><br>
-      <span style="color: white;font-size: 1.2em;">Odysseus Returns!</span>
-    </b><br>
-  </p>
-  <video src="wizarddemo.mp4" style="width: 370px;max-width: 60%; border: 15px solid black;border-radius: 15px; box-shadow: 0 10px 20px #2C2C2C;" muted loop autoplay></video>
-</div>
     <p class="role-description"><b><span style="color: #B9FFD5;font-size: 1.8em;line-height: 1em;max-width: 100%;">Game Project</span><br><br><br><span style="color: white;font-size: 1.2em;">Wolfcast Wizards</span></b><br></p>
   </header>
+    <div class="working-on">
+  <p class="role-description2">
+    <b>
+      <span style="color: #B9FFD5;font-size: 1em; line-height: 1em;">Working on:</span><br>
+      <a href="https://mraisat.github.io/odyr/"><span style="color: white;font-size: 1.2em; line-height: 1em; text-decoration: underline;">Odysseus Returns!</span></a>
+    </b>
+  </p>
+  <video src="trialodyr.mp4" class="video1" style="width: 370px;max-width: 80%;border-radius: 10px;" muted loop autoplay></video>
+</div>
     <video src="wizarddemo.mp4" style="width: 370px;max-width: 60%; border: 15px solid black;border-radius: 15px; margin-left: 17%;box-shadow: 0 10px 20px #2C2C2C;" muted loop autoplay></video>
 <h2 style=" margin-left: 17%;font-weight: 400;font-size: 1em;max-width: 65%;color: white;"><br><br><b>Overview</b><br><p>Using Python, I developed a dynamic 2-player combat game called Wolfcast Wizards where players engage in real-time battles, strategically depleting each other's health while casting spells and their very own powerful wolf companions. Working on this project provided me with a valuable (and fun) hands-on learning experience that enhanced my Python skills while delving into key aspects of game development, including user input handling, sprite animations, and dynamic gameplay elements.</p>
 <br>
