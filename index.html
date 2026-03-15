@@ -39,6 +39,24 @@
         height: auto; 
     transition: all 0.4s ease; 
 }
+    .leaf {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #B9FFD5;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.8;
+  transform: rotate(45deg);
+  animation: float 0.8s ease-out forwards;
+}
+
+@keyframes float {
+  to {
+    transform: translateY(-15px) scale(0.3) rotate(90deg);
+    opacity: 0;
+  }
+}
       
        @media only screen and (max-width: 1500px) {
     .pcimg {
@@ -273,6 +291,14 @@ h2 {
     </div>
 
   <script>
+    document.body.addEventListener('mousemove', (e) => {
+  const leaf = document.createElement('div');
+  leaf.className = 'leaf';
+  leaf.style.left = e.pageX + 'px';
+  leaf.style.top = e.pageY + 'px';
+  document.body.appendChild(leaf);
+  setTimeout(() => leaf.remove(), 800); // fade out
+});
   </script>
 </body>
 </html>
